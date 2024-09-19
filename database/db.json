@@ -20,6 +20,13 @@
       "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
       "price": 12.99,
       "category": "beauty"
+    },
+    {
+      "id": "yC0D2LxqwQqR5JSbeW4RW",
+      "title": "Banana",
+      "price": "685",
+      "description": "Quos sit excepturi s",
+      "category": "Voluptas commodi ess"
     }
   ]
 }
