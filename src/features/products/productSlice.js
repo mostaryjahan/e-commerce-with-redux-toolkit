@@ -23,6 +23,13 @@ export const deleteProduct = createAsyncThunk('products/deleteProduct',  async(i
 }
 ) 
 
+export const createProduct = createAsyncThunk('products/deleteProduct',  async(product) => {
+  const res =await axios.post(BASE_URl, product);
+   console.log(res);
+  
+}
+)
+
 export const productSlice = createSlice({
   name: 'products',
   initialState: initialState,
