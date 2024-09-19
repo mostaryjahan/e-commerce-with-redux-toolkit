@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { fetchProducts } from "./productSlice";
+import { deleteProduct, fetchProducts } from "./productSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProductListView = () => {
@@ -23,6 +23,7 @@ const ProductListView = () => {
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
                     <h5>{product.price}</h5>
+                    <button onClick={()=> dispatch(deleteProduct(product.id))}>Delete</button>
 
                 </article>
             })
