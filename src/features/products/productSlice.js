@@ -13,7 +13,7 @@ export const fetchProducts = createAsyncThunk('products/fetchProducts',  async()
     const res =await axios.get(BASE_URl);
     // console.log(res.data);
     return res.data;
-}
+}   
 ) 
 
 export const deleteProduct = createAsyncThunk('products/deleteProduct',  async(id) => {

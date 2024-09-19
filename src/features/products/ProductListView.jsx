@@ -22,7 +22,8 @@ const ProductListView = () => {
                 return  <article key={product.id}>
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
-                    <h5>{product.price}</h5>
+                    <p>Category: {product.category}</p>
+                    <h5>Price: {product.price}</h5>
                     <button onClick={()=> dispatch(deleteProduct(product.id))}>Delete</button>
 
                 </article>
