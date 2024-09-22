@@ -11,3 +11,5 @@ const App = () => {
 };
 
 export default App;
+// npx json-server -p 5000 -w database/db.json
+

@@ -1,7 +1,13 @@
+
+
 {
   "products": [
     {
-      "id": "2"
+      "id": "2",
+      "title": "Product Placeholder",
+      "description": "This is a placeholder product.",
+      "price": 0.00,
+      "category": "miscellaneous"
     },
     {
       "id": "3",
