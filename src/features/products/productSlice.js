@@ -30,6 +30,14 @@ export const createProduct = createAsyncThunk('products/createProduct',  async(p
 }
 )
 
+export const editProduct = createAsyncThunk('products/editProduct',  async(id) => {
+  const res =await axios.put(`${BASE_URl}/${id}`);
+  // console.log(res.data);
+  return id;
+  
+}
+)
+
 export const productSlice = createSlice({
   name: 'products',
   initialState: initialState,
@@ -57,6 +65,12 @@ export const productSlice = createSlice({
   .addCase(createProduct.fulfilled, (state, action) =>{
    
     state.products.push(action.payload) ;
+})
+
+ //update
+ .addCase(editProduct.fulfilled, (state, action) =>{
+   
+  state.products = state.products.filter(product=> product.id === action.payload)
 })
   }
 })
